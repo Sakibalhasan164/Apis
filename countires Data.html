@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Countries CSV data</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+</head>
+<body>
+<h1>Hare is a data visualization of internet users across the world</h1>
+<canvas id="myChart"></canvas>
+
+
+<script>
+//variables
+const countryArray=[];
+const areaArray=[];
+console.log(countryArray,areaArray);
+
+window.addEventListener("load",makeChart)
+
+//making the chart
+ async function makeChart(){
+     await loadData()
+    const ctx = document.getElementById('myChart').getContext('2d');
+const chart = new Chart(ctx, {
+    // The type of chart we want to create
+    type: 'bar',
+
+    // The data for our dataset
+    data: {
+        labels:countryArray,
+        datasets: [{
+            label: 'Area of countries',
+            backgroundColor: 'rgb(255, 99, 132)',
+            borderColor: 'rgb(255, 99, 132)',
+            data:areaArray
+        }]
+    },
+
+    // Configuration options go here
+    options: {}
+});
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ async  function loadData(){
+    const respose=await fetch("countries.csv")
+    const data=await respose.text()
+    const rows=data.split("\n")
+
+    for(i=0;i<rows.length;i++){
+    const arrayofData=rows[i].split(";")
+    // console.log(arrayofData);
+    const country=arrayofData[0]
+    const area=arrayofData[1]
+    countryArray.push(country)
+    areaArray.push(area)
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

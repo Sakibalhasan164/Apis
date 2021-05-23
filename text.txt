@@ -1,0 +1,4 @@
+This text's files data will be fetched in the webpage by an async 
+function..............
+I am working with data and apis in javascript
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum error, expedita eius nulla similique sunt doloremque veritatis facilis repellendus, quia, perferendis quae? Facilis perspiciatis temporibus eum commodi porro neque exercitationem laudantium iusto mollitia dignissimos? Atque, laboriosam. Reprehenderit, eaque? Error earum libero cumque unde aliquam obcaecati voluptatibus saepe voluptatem. Libero, fugit ullam dolorem atque magni impedit. Cumque tempora at, odit earum aliquam a nobis labore eius reprehenderit? Ut cumque sed necessitatibus at molestias quaerat aliquam reprehenderit in velit doloribus aliquid laudantium eveniet similique voluptatum provident error delectus praesentium quae iste, vel magni! Quibusdam iusto rerum eos nisi delectus. Facilis, voluptatum fugit.
